@@ -1,0 +1,35 @@
+apply from: rootProject.file('android-modules-common-config.gradle')
+
+android {
+
+    dataBinding {
+        enabled = true
+    }
+
+}
+
+dependencies {
+    implementation(
+            Dependencies.constraintLayout,
+            Dependencies.appCompat,
+            Dependencies.materialDesign,
+
+            Dependencies.navFragmentKts,
+            Dependencies.navUIKts,
+
+            Dependencies.coroutines,
+            Dependencies.coroutinesAndroid,
+
+            Dependencies.rxJava,
+            Dependencies.rxAndroid,
+
+            Dependencies.dagger,
+            Dependencies.daggerAndroidSupport,
+
+            Dependencies.threeTenAndroidBackport,
+
+            project(Modules.repository),
+            project(Modules.common)
+
+    )
+}

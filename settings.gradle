@@ -1,0 +1,2 @@
+include ':app', ':entities', ':repository', ':common', ':network', ':auth', ':home'
+rootProject.name='Meetup'

@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+apply from: rootProject.file('android-modules-common-config.gradle')
+
+android {
+
+    defaultConfig {
+
+        applicationId DepVersions.applicationId
+
+        vectorDrawables {
+            useSupportLibrary = true
+        }
+
+        multiDexEnabled true
+
+    }
+
+    buildTypes {
+
+        debug {
+            versionNameSuffix "-debug"
+            applicationIdSuffix ".debug"
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.md'
+        exclude 'META-INF/LICENSE-notice.md'
+    }
+
+}
+
+dependencies {
+
+    implementation(
+            Dependencies.appCompat,
+            Dependencies.constraintLayout,
+
+            Dependencies.coroutines,
+            Dependencies.coroutinesAndroid,
+
+            Dependencies.materialDesign,
+
+            Dependencies.threeTenAndroidBackport,
+
+            Dependencies.rxAndroid,
+
+            Dependencies.gson,
+
+            Dependencies.commonsText,
+
+            Dependencies.multiDex,
+
+            Dependencies.dagger,
+            Dependencies.daggerAndroidSupport,
+
+            project(Modules.repository),
+            project(Modules.common),
+            project(Modules.auth),
+            project(Modules.home),
+            project(Modules.network)
+    )
+
+    kapt(
+            Dependencies.daggerAndroidProcessor,
+            Dependencies.daggerCompiler
+    )
+
+    testImplementation(
+            Dependencies.androidXTestCore,
+            Dependencies.androidXTestCoreKtx,
+            Dependencies.androidXArchCoreTesting,
+            Dependencies.androidXJunitExtension
+    )
+
+    androidTestImplementation(
+            Dependencies.espresso,
+            Dependencies.espressoContrib
+    )
+
+}

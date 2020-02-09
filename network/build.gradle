@@ -1,11 +1,33 @@
 apply from: rootProject.file('android-modules-common-config.gradle')
 
+android {
+    defaultConfig {
+        buildConfigField("String", "BASE_URL", Dependencies.BASE_URL)
+    }
+}
+
 dependencies {
 
     implementation(
             Dependencies.rxJava,
             Dependencies.rxAndroid,
-            Dependencies.threeTenAndroidBackport
+
+            Dependencies.javax,
+            Dependencies.javaxAnnotation,
+
+            Dependencies.okhttp,
+            Dependencies.okhttpLoggingInterceptor,
+            Dependencies.retrofit,
+            Dependencies.retrofitGsonConverter,
+            Dependencies.retrofitRxJavaAdapter,
+
+            Dependencies.dagger,
+
+            project(Modules.repository)
+    )
+
+    kapt (
+            Dependencies.daggerCompiler
     )
 
 }

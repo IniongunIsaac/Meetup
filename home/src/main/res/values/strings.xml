@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">home</string>
+    <string name="meetup_item_title_text">Fit and Flair</string>
+    <string name="meetup_item_price_text">$120.99</string>
+    <string name="meetup_item_percent_off_text">10% Off</string>
+    <string name="meetup_text">Meetup</string>
 </resources>

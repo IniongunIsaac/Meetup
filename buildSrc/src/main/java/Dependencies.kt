@@ -4,7 +4,7 @@ object DepVersions {
 
     const val targetSdkVersion = 29
     const val compileSdkVersion = 29
-    const val minSdkVersion = 16
+    const val minSdkVersion = 19
     const val buildToolsVersion = "29.0.2"
 
     const val versionCode = 1
@@ -74,6 +74,9 @@ object Modules {
 
 object Dependencies {
 
+    //Base URL
+    const val BASE_URL = "\"https://reqres.in/api/\""
+
     //Classpaths
     const val gradle = "com.android.tools.build:gradle:${DepVersions.gradle}"
     const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${DepVersions.kotlin}"
@@ -125,6 +128,7 @@ object Dependencies {
     const val retrofit = "com.squareup.retrofit2:retrofit:${DepVersions.retrofit}"
     const val retrofitGsonConverter = "com.squareup.retrofit2:converter-gson:${DepVersions.retrofit}"
     const val retrofitCoroutinesAdapter =  "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:${DepVersions.retrofitCoroutinesAdapter}"
+    const val retrofitRxJavaAdapter = "com.squareup.retrofit2:adapter-rxjava2:${DepVersions.retrofit}"
 
     // ViewModel
     const val lifecycleExt = "androidx.lifecycle:lifecycle-extensions:${DepVersions.navLifecycle}"

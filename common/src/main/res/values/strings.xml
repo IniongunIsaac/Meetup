@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">common</string>
+    <string name="meetup_copyright_text">copyright \u00a9 meetup</string>
 </resources>

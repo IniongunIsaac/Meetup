@@ -5,8 +5,9 @@ dependencies {
     implementation(
             Dependencies.rxJava,
             Dependencies.rxAndroid,
-            Dependencies.threeTenAndroidBackport,
-            project(Modules.network)
+
+            Dependencies.javax,
+            Dependencies.javaxAnnotation,
     )
 
 }

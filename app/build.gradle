@@ -59,6 +59,10 @@ dependencies {
 
             Dependencies.multiDex,
 
+            Dependencies.okhttp,
+            Dependencies.okhttpLoggingInterceptor,
+            Dependencies.retrofitRxJavaAdapter,
+            Dependencies.retrofitGsonConverter,
             Dependencies.dagger,
             Dependencies.daggerAndroidSupport,
 

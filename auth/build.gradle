@@ -2,6 +2,12 @@ apply from: rootProject.file('android-modules-common-config.gradle')
 
 android {
 
+    defaultConfig {
+        vectorDrawables {
+            useSupportLibrary = true
+        }
+    }
+
     dataBinding {
         enabled = true
     }

@@ -4,4 +4,7 @@
     <string name="meetup_item_price_text">$120.99</string>
     <string name="meetup_item_percent_off_text">10% Off</string>
     <string name="meetup_text">Meetup</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

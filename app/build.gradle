@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply from: rootProject.file('android-modules-common-config.gradle')
+apply plugin: 'androidx.navigation.safeargs'
 
 android {
 
@@ -44,12 +45,17 @@ dependencies {
             Dependencies.appCompat,
             Dependencies.constraintLayout,
 
+            Dependencies.androidXCoreKts,
+            Dependencies.navFragmentKts,
+            Dependencies.navUIKts,
+            Dependencies.legacySupport,
+
             Dependencies.coroutines,
             Dependencies.coroutinesAndroid,
 
             Dependencies.materialDesign,
 
-            Dependencies.threeTenAndroidBackport,
+            Dependencies.timber,
 
             Dependencies.rxAndroid,
 

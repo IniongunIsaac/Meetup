@@ -60,6 +60,7 @@ object DepVersions {
     const val hamcrest = "1.3"
     const val robolectric = "4.3.1"
     const val threeTenBackport = "1.4.0"
+    const val timber = "4.7.1"
 }
 
 object Modules {
@@ -158,6 +159,9 @@ object Dependencies {
 
     //ThreeTen Android Backport for DateTime
     const val threeTenAndroidBackport = "com.jakewharton.threetenabp:threetenabp:${DepVersions.threeTenAndroidBackport}"
+
+    //Timber
+    const val timber = "com.jakewharton.timber:timber:${DepVersions.timber}"
 
     //Apache string utilities
     const val wordUtilities = "org.apache.commons:commons-lang3:${DepVersions.commonsLang3}"

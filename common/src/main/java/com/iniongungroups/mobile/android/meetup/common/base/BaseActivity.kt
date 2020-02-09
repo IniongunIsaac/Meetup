@@ -149,10 +149,10 @@ abstract class BaseActivity<in D : ViewDataBinding, out V : BaseViewModel> :
             )
         )
         if (isError) snackBarLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.red))
-        else snackBarLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.colorPrimary))
+        else snackBarLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.green))
 
         snackBarLayout.findViewById<TextView>(com.google.android.material.R.id.snackbar_text)
-            .setTextColor(ContextCompat.getColor(this, R.color.colorAccent))
+            .setTextColor(ContextCompat.getColor(this, R.color.white))
         param.gravity = Gravity.TOP
         snackBar.view.layoutParams = param
         snackBar.show()

@@ -2,6 +2,8 @@ package com.iniongungroups.mobile.android.meetup.network.services
 
 import com.iniongungroups.mobile.android.meetup.entities.Auth
 import io.reactivex.Single
+import retrofit2.http.Body
+import retrofit2.http.Headers
 import retrofit2.http.POST
 
 /**
@@ -11,10 +13,18 @@ import retrofit2.http.POST
 
 interface AuthService {
 
+    @Headers(
+        "Accept: application/json",
+        "Content-Type: application/json"
+    )
     @POST("login")
-    fun login(requestBody: HashMap<String, String>): Single<Auth>
+    fun login(@Body requestBody: HashMap<String, String>): Single<Auth>
 
+    @Headers(
+        "Accept: application/json",
+        "Content-Type: application/json"
+    )
     @POST("register")
-    fun register(requestBody: HashMap<String, String>): Single<Auth>
+    fun register(@Body requestBody: HashMap<String, String>): Single<Auth>
 
 }

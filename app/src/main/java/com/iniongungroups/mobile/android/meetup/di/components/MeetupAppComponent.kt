@@ -1,10 +1,7 @@
 package com.iniongungroups.mobile.android.meetup.di.components
 
 import com.iniongungroups.mobile.android.meetup.MeetupApplication
-import com.iniongungroups.mobile.android.meetup.di.modules.AppModule
-import com.iniongungroups.mobile.android.meetup.di.modules.NetworkModule
-import com.iniongungroups.mobile.android.meetup.di.modules.RepoNetModule
-import com.iniongungroups.mobile.android.meetup.di.modules.ViewModelsModule
+import com.iniongungroups.mobile.android.meetup.di.modules.*
 import com.iniongungroups.mobile.android.meetup.di.scopes.AppScope
 import dagger.BindsInstance
 import dagger.Component
@@ -23,7 +20,8 @@ import dagger.android.support.AndroidSupportInjectionModule
         AppModule::class,
         RepoNetModule::class,
         NetworkModule::class,
-        ViewModelsModule::class
+        ViewModelsModule::class,
+        AppActivityBinding::class
     ]
 )
 @AppScope

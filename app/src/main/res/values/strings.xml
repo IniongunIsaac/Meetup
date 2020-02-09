@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Meetup</string>
     <string name="splash_intro_text">get to meet great\npeople around you</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

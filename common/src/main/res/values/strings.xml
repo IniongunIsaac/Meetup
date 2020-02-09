@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">common</string>
     <string name="meetup_copyright_text">copyright \u00a9 meetup</string>
+
+    <!--  Activity navigation intent urls  -->
+    <string name="auth_activity_intent">com.iniongungroups.mobile.android.meetup.auth.start</string>
+    <string name="home_activity_intent">com.iniongungroups.mobile.android.meetup.home.start</string>
+
 </resources>
